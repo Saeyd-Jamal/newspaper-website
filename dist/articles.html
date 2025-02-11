@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marena Post</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-bodyFont">
+    <!-- Header Section -->
+    <header
+      class="bg-white py-9 px-20 shadow-md flex justify-between items-center"
+    >
+      <!-- Ad Banner -->
+
+      <img
+        src="../assets/longad.png"
+        alt="Marena Post Logo"
+        class="h-20 w-[70%] px-20"
+      />
+      <!-- Replace with actual logo -->
+
+      <!-- Logo -->
+
+      <img src="../assets/logo.png" alt="Marena Post Logo" class="h-20" />
+      <!-- Replace with actual logo -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <div
+      class="bg-[#670006] shadow-lg border-t-2 border-[#670006] text-white font-[Cairo] text-sm leading-6 font-normal relative max-h-[65px]"
+    >
+      <div class="container px-4 ml-[100px]">
+        <div class="flex justify-between items-center py-2">
+          <nav
+            id="headerNav"
+            class="min-h-[36px] hidden md:flex space-x-6 rtl:space-x-reverse mrg020p"
+          >
+            <ul class="text-sm flex space-x-6 rtl:space-x-reverse mr-[50px]">
+              <li class="">
+                <a
+                  href="index.html"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Articles"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >مقالات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="news"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >اخبار</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >تواصل معنا</a
+                >
+              </li>
+              <li class="relative group">
+                <a href="#" class="flex items-center">
+                  <i class="fa fa-angle-left ml-2"></i>المزيد</a
+                >
+                <ul
+                  class="absolute hidden group-hover:block bg-white text-black shadow-md w-[200px] p-4 right-0 text-right"
+                >
+                  <li class="mb-2">
+                    <a href="news?c=33" class="block hover:text-red-500"
+                      >اخبار المشاهير والفنانين</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=31" class="block hover:text-red-500"
+                      >ستايل وموضة</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=30" class="block hover:text-red-500"
+                      >تفسير الاحلام</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=27" class="block hover:text-red-500"
+                      >الأبراج</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=26" class="block hover:text-red-500"
+                      >علوم وحقائق</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=23" class="block hover:text-red-500"
+                      >معاني الأسماء</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form
+            action="#"
+            class="header--search-form relative min-w-[32px] m-0 pl-[100px] text-left z-[1] float-right active"
+            data-form="validate"
+            novalidate
+          >
+            <input
+              type="search"
+              name="search"
+              id="stxt"
+              placeholder="بحث..."
+              class="header--search-control absolute top-[11px] right-0 w-0 bg-gray-200 border-0 rounded-full opacity-0 invisible transition-all duration-500 ease-in-out text-[#000]"
+              required
+              onkeyup="myFn2('stxt')"
+              aria-required="true"
+            />
+            <button
+              type="submit"
+              class="header--search-btn relative p-[15px] bg-transparent text-[16px] leading-[26px] transition-all duration-300 ease-in-out outline-none"
+            >
+              <i class="header--search-icon fa fa-search"></i>
+            </button>
+          </form>
+
+          <style>
+            .header--search-form.active .header--search-control {
+              width: 220px;
+              opacity: 1;
+              visibility: visible;
+              height: 33px;
+              text-align: left;
+            }
+
+            .header--search-form.active .header--search-btn {
+              padding-right: 15px;
+              color: #999;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+    <div class="iconns mx-auto w-1/3 border-b-2">
+      <ul class="flex justify-between p-2 text-center">
+        <li class="hover:cursor-pointer hover:text-gray-500">
+          <i class="fa fa-bolt"></i>
+          <div>عصرى</div>
+        </li>
+        <li class="hover:cursor-pointer hover:text-gray-500">
+          <i class="fa fa-eye"></i>
+          <div>الاكثر مشاهدة</div>
+        </li>
+        <li class="hover:cursor-pointer hover:text-gray-500">
+          <i class="fa fa-star"></i>
+          <div>اخبار مميزة</div>
+        </li>
+        <li class="hover:cursor-pointer hover:text-gray-500">
+          <i class="fa fa-heart"></i>
+          <div>الاكثر شهره</div>
+        </li>
+        <li class="hover:cursor-pointer hover:text-gray-500">
+          <i class="fa fa-fire"></i>
+          <div>Hot</div>
+        </li>
+      </ul>
+    </div>
+
+    <section class="w-3/4 mx-auto mt-8">
+      <div class="news-ticker">
+        <div class="news-items">
+          <div class="news-item">خبر عاجل: حدث مهم يحدث الآن!</div>
+          <div class="news-item">تحديث: تعرف على آخر التطورات.</div>
+          <div class="news-item">نصيحة: لا تفوت هذه الفرصة!</div>
+        </div>
+      </div>
+
+      <div class="container mt-5 text-center">
+        <div class="flex sm:grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="bg-gray-200 p-3">
+            <div class="grid justify-between grid-flow-col">
+              <i class="fa-solid fa-folder-open"></i>
+              <h2>فئه</h2>
+            </div>
+            <ul class="unlist">
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير.............(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>استايل وموضة........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a> المشاهير........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a> الابراج ...........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>علوم وحقائق........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a> طعام وشراب.........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>حرب ...........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير...........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير.........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار ..........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير.........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار ...........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a> استايل وموضة.........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار .........(80)
+              </li>
+              <li class="hover:text-red-500 hover:cursor-pointer">
+                <a href="#"></a>اخبار المشاهير...........(20)
+              </li>
+            </ul>
+            <div class="bg-gray-500 p-4">
+              <div class="grid justify-between grid-flow-col pb-5">
+                <h2>العلامات</h2>
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+              <button
+                class="border border-black hover:bg-gray-700 rounded-sm p-2"
+              >
+                الاكثر شهرة
+              </button>
+              <button
+                class="border border-black hover:bg-gray-700 rounded-sm p-2"
+              >
+                اخبار مميزة
+              </button>
+              <button
+                class="border border-black hover:bg-gray-700 rounded-sm p-2"
+              >
+                الاكثر مشاهدة
+              </button>
+              <button
+                class="border border-black hover:bg-gray-700 rounded-sm p-2"
+              >
+                عصرى
+              </button>
+              <button
+                class="border border-black hover:bg-gray-700 rounded-sm p-2"
+              >
+                Hot
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Repeated Articles -->
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    كيف أتخطى الفشل في حياتي ؟
+                  </h2>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    تفسير السفر في منام الشخص
+                  </h2>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    كيف تنجح في حياتك العملية؟
+                  </h2>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    كيف تتغلب على التوتر والقلق؟
+                  </h2>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    أسرار النجاح في ريادة الأعمال
+                  </h2>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src="../assets/files/25896464965حلم.jpg"
+                  alt="Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <div class="text-gray-500 text-sm flex justify-between">
+                    <span>إيمان</span>
+                    <span>2024-11-18</span>
+                  </div>
+                  <h2 class="text-center text-lg font-semibold mt-2">
+                    كيف تحسن مهاراتك الاجتماعية؟
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#1d1d1d] text-[#777]">
+      <!-- Top Section -->
+      <div class="container mx-auto px-6 py-[4rem]">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Useful Links -->
+          <div class="text-right">
+            <div class="relative pt-3 pb-[13px] border-t-2 border-white z-0">
+              <h2
+                class="text-lg font-semibold flex items-center gap-2 justify-start"
+              >
+                <i class="fa fa-expand text-white"></i> روابط معلومات مفيدة
+              </h2>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li class="flex items-center gap-2 justify-start">
+                <a href="about" class="hover:underline">من نحن</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="news" class="hover:underline">أخبار</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="#" class="hover:underline">العالم</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="#" class="hover:underline">رياضة</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- About Section -->
+          <div class="text-right">
+            <div class="relative pt-3 pb-[13px] border-t-2 border-white z-0">
+              <h2
+                class="text-lg font-semibold flex items-center gap-2 justify-start"
+              >
+                <i class="fa fa-exclamation text-white"></i> معلومات عنا
+              </h2>
+            </div>
+            <p class="mt-2 text-sm">
+              افضل الأخبار والمقالات. تعرف على احدث الأخبار بمصداقية عالية.
+              يمكنك الاطّلاع على آخر الأخبار المتعلّقة بالمجالات الرائجة والمزيد
+              من هنا مباشرةً.
+            </p>
+            <a
+              href="about"
+              class="text-white hover:underline flex items-center gap-1 justify-start mt-2"
+            >
+              اقرأ أكثر <i class="fa fa-angle-double-right"></i>
+            </a>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-map text-white"></i> <span>فلسطين</span>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-envelope text-white"></i>
+                <a href="mailto:info@marenapost.com" class="hover:underline"
+                  >info@marenapost.com</a
+                >
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-phone text-white"></i>
+                <a href="tel:soon" class="hover:underline">soon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="bg-[#670005] py-6">
+        <div
+          class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm"
+        >
+          <div class="flex gap-4">
+            <a href="home" class="text-white font-semibold">الرئيسية</a>
+
+            <a href="termofservice" class="text-white font-semibold"
+              >السياسة و الخصوصية</a
+            >
+          </div>
+          <p class="text-white font-semibold">
+            . All Rights Reserved.
+            <a href="#" class="text-white font-semibold">مارينا بوست</a>© 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="../node_modules/tw-elements/js/tw-elements.umd.min.js"
+    ></script>
+  </body>
+</html>

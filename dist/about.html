@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>مارينا بوست</title>
+
+    <link
+      rel="icon"
+      href="../assets/files/صورة_واتساب_بتاريخ_2024-10-09_في_12.53.11_cd9169ce7_(1).png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      type="a4e742b47887d276763bb293-text/javascript"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      type="a4e742b47887d276763bb293-text/javascript"
+    ></script>
+
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <style>
+    ul.scrollmenu {
+      overflow: auto;
+      white-space: nowrap;
+      width: 900px;
+    }
+
+    ul.scrollmenu a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    ul.scrollmenu a:hover {
+      background-color: #777;
+    }
+
+    #fx-pricing-widget-copyright {
+      text-align: center;
+      font-size: 13px;
+      font-family: sans-serif;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #9db2bd;
+    }
+
+    #fx-pricing-widget-copyright a {
+      text-decoration: unset;
+      color: #bb3534;
+      font-weight: 600;
+    }
+  </style>
+
+  <body
+    onload="document.body.style.backgroundColor = 'white';document.body.style.backgroundImage = 'url()';"
+  >
+    <div class="wrapper">
+      <header class="header--section header--style-1">
+        <div class="header--topbar bg--color-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                <div class="float--right float--xs-none text-xs-center">
+                  <ul class="header--topbar-info nav">
+                    <li id="cur">
+                      1&nbsp; <i class="fa fa-ils" style="font-size: 12px"></i>
+                      <i
+                        class="fa fa-long-arrow-right"
+                        aria-hidden="true"
+                        style="font-size: 12px"
+                      ></i>
+                      <i class="fa fa-usd" style="font-size: 13px"></i
+                      >&nbsp;&nbsp; 1&nbsp;
+                      <i class="fa fa-ils" style="font-size: 12px"></i>
+                      <i
+                        class="fa fa-long-arrow-right"
+                        aria-hidden="true"
+                        style="font-size: 12px"
+                      ></i>
+                      JOD &nbsp;&nbsp; 1&nbsp;
+                      <i class="fa fa-ils" style="font-size: 12px"></i>
+                      <i
+                        class="fa fa-long-arrow-right"
+                        aria-hidden="true"
+                        style="font-size: 12px"
+                      ></i>
+                      <i class="fa fa-euro" style="font-size: 13px"></i>
+                    </li>
+
+                    <li>
+                      <i class="fa fm fa-map-marker"></i><span id="city"></span>
+                    </li>
+                    <li id="temp">
+                      <i class="fa fm fa-mixcloud"></i>
+                      <sup>0</sup> C
+                    </li>
+
+                    <li>
+                      <i class="fa fm fa-calendar"></i>Tuesday 11th of February
+                      2025 10:49:54 PM
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="float--left float--xs-none text-xs-center">
+                  <ul class="header--topbar-action nav">
+                    <li>
+                      <a href="../u/login">
+                        <i class="fa fm fa-user-o"></i> دخول/تسجيل
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="header--topbar-lang nav">
+                    <li class="dropdown">
+                      <a
+                        href="#"
+                        onclick="if (!window.__cfRLUnblockHandlers) return false; langc('ar')"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        data-cf-modified-a4e742b47887d276763bb293-=""
+                      >
+                        <i class="fa fm fa-language"></i> English
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; langc('ar')"
+                            data-cf-modified-a4e742b47887d276763bb293-=""
+                            >English</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; langc('ar')"
+                            data-cf-modified-a4e742b47887d276763bb293-=""
+                            >Spanish</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; langc('ar')"
+                            data-cf-modified-a4e742b47887d276763bb293-=""
+                            >French</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header--mainbar">
+          <!--<div class="container">-->
+          <div class="main-content--section">
+            <div class="row" style="margin: 0px 4%">
+              <div
+                class="col-md-12 col-xs-12 col-sm-12 col-lg-1"
+                style="width: 2.333333%"
+              ></div>
+              <!--header--logo-->
+              <div
+                class="col-md-12 col-xs-12 col-sm-12 col-lg-4 float--right float--sm-none text-sm-center"
+                style="
+                  justify-content: center;
+                  float: left;
+                  width: revert-layer;
+                "
+              >
+                <!--<h1 class="h1" >-->
+                <a href="home" class="btn-link">
+                  <img
+                    src="../assets/files/صورة_واتساب_بتاريخ_2024-10-09_في_12.53.11_cd9169ce7.png"
+                    alt=""
+                    style="width: 60%"
+                  />
+                  <span class="hidden"> Logo</span>
+                </a>
+                <!--</h1>-->
+              </div>
+              <div
+                class="col-md-12 col-xs-12 col-sm-12 col-lg-7 float--sm-none"
+              >
+                <a href="#">
+                  <img
+                    src="../assets/files/longad.png"
+                    alt="اضافة اعلان"
+                    style="border: 1px solid gold; width: 100%; height: 90px"
+                  />
+                </a>
+              </div>
+              <div class="col-md-12 col-xs-12 col-sm-12 col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header--navbar style--1 navbar bd--color-1 bg--color-1"
+          data-trigger="sticky"
+        >
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#headerNav"
+                aria-expanded="false"
+                aria-controls="headerNav"
+              >
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div
+              id="headerNav"
+              class="navbar-collapse collapse float--right mrg020p"
+            >
+              <ul
+                class="header--menu-links nav navbar-nav"
+                data-trigger="hoverIntent"
+              >
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >المزيد <i class="fa flm fa-angle-left"></i>
+                  </a>
+
+                  <ul
+                    class="dropdown-menu scrollmenu"
+                    style="float: right; direction: rtl; text-align: right"
+                  >
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/صورة_واتساب_بتاريخ_2024-10-09_في_12.53.11_cd9169ce7_(2).png"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=33">اخبار المشاهير والفنانين</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/09c56021-a970-420e-afa7-2fd64258fbe5.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=31">ستايل وموضة</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/channels4_profile.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=30">تفسير الاحلام </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/صورة133.png"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=27">الأبراج </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/2017_7_13_23_41_34_738.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=26">علوم وحقائق</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/BABY-NAMES-THAT-MEAN-LOVE-35da92e.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=23">معاني الأسماء </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/va_religions_header.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=20">دينية</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/pngtree-food-and-drink-in-different-containers-with-fruits-picture-image_3371165.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=16">طعام وشراب </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/2024-04-25T115138Z_1200299247_RC2ND7ACPW92_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA.jpeg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12"><a href="news?c=15">حرب</a></div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/shutterstock_626152457-scaled.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=13">جمال وعناية بالذات </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/AdobeStock_246942922.jpeg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=12">صحة وتغذية </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/picsart-02-25-021020-1.png"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=11">منوعات</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/30WELL-ART-BRAIN-articleLarge.webp"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=10">فنون وادب</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/pexels-tyrrel-burns-564860323-17186683_803805.webp"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=8">مجتمعات حول العالم </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/sports-tools_53876-138077.avif"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=6">رياضة</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/7-very-good-reasons-to-do-master-s-in-finance.webp"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=4">المالية</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/Modren-Tech.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=3">تقنية</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="width: 200px; padding: 20px" class="box">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img
+                            src="../assets/files/فهم-اضطراب-طيف-التوحد.-دليل-للآباء-والمعلمين-610x380.jpg"
+                            style="width: max-content; height: 100px"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <a href="news?c=1">قضايا مجتمعية </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="contact.html"> تواصل معنا </a>
+                </li>
+                <li class="active">
+                  <a href="about.html"> من نحن </a>
+                </li>
+                <li>
+                  <a href="news.html"> اخبار </a>
+                </li>
+
+                <li>
+                  <a href="articles.html"> مقالات </a>
+                </li>
+                <li>
+                  <a href="home.html"> الرئيسية </a>
+                </li>
+              </ul>
+            </div>
+
+            <form
+              action="#"
+              class="header--search-form float--right"
+              data-form="validate"
+            >
+              <input
+                type="search"
+                name="search"
+                id="stxt"
+                placeholder="بحث..."
+                class="header--search-control form-control"
+                required
+                onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('stxt')"
+                data-cf-modified-a4e742b47887d276763bb293-=""
+              />
+              <button type="submit" class="header--search-btn btn">
+                <i class="header--search-icon fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div class="main--breadcrumb" style="direction: rtl">
+        <div class="container">
+          <ul class="breadcrumb" style="direction: rtl">
+            <li>
+              <a href="home" class="btn-link"
+                ><i class="fa fm fa-home"></i>الرئيسية</a
+              >
+            </li>
+            <li class="active">
+              <span>من نحن ؟</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content--section pbottom--30" style="direction: rtl">
+        <div class="container">
+          <div class="main--content">
+            <div class="post--item post--single pd--30-0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div
+                    class="post--video embed-responsive embed-responsive-16by9"
+                  >
+                    <img
+                      src="../assets/files/صورة_واتساب_بتاريخ_2024-10-09_في_12.53.11_cd9169ce.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="post--info">
+                    <div class="title">
+                      <h2 class="h4">مارينا بوست</h2>
+                    </div>
+                  </div>
+                  <div class="post--content">
+                    <p>
+                      مارينا بوست موقع الكتروني اجتماعي متنوع يتميز بمحتوى صادق
+                      وشفاف ويحتوي على العديد من المقالات المتنوعة والاخبار
+                      الفريدة من نوعها والمميزة .التي تهم زائرينا الكرام والتي
+                      يعنى بها جمهورنا هل تعرف أدوات أو تطبيقات أو موارد صحفية
+                      لم نقم بتغطيتها ولم ننشر مقالات عنها؟ هل أنت من المبتكرين
+                      الإعلاميين ولديك فكرة مميّزة تُريد أن تخبر الصحفيين بها؟
+                      أو هل تريد مناقشة الاتجاهات الإعلامية الحالية في بلدك؟ إذا
+                      كانت إجابتك نعم عن أي من الأسئلة السابقة.. إذًا نحن هنا
+                      لنسمعك! تستقبل شبكة الصحفيين الدوليين الأفكار من القرّاء،
+                      فنحن نأمل بأن نبني شبكة من الكتاب العالميين والمتنوعين
+                      الذين يمكن أن تساعد أعمالهم أكبر عدد ممكن من الصحفيين، ومن
+                      أجل إرسال الأفكار والفرص يمكنكم التواصل معنا، وقبل تعبئة
+                      النموذج في أسفل الصفحة، يرجى أن تكونوا على اطلاع على
+                      المحتوى الذي يُنشر على موقع الشبكة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info--blocks ptop--30">
+              <ul class="nav row">
+                <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                  <div class="info--block">
+                    <div class="icon text--color-1">
+                      <i class="fa fa-dashboard"></i>
+                    </div>
+                    <div class="title">
+                      <h3 class="h5">أهدافنا</h3>
+                    </div>
+                    <div class="content">
+                      <p>
+                        إيصال المعلومات الى المتابع في وقت قياسي شبكة الصحفيين
+                        الدوليين هي مرجع ومورد للصحفيين، وتركّز في المحتوى على
+                        كلّ ما يهم الصحفيين، كما أثّرت بالمسيرة الصحفية لكثيرين،
+                        يمكنكم الإطلاع على مثل عبر الضغط هنا وهنا. تجدون فيما
+                        يلي مقالات ونماذج عن المواضيع التي نتطرّق لها: - نصائح
+                        على شكل قائمة، يمكنكم الإطلاع على مثل عبر الضغط هنا
+                        وهنا. - أدوات تهم الصحفيين، يمكنكم الإطلاع على مثل عبر
+                        الضغط هنا وهنا. -دراسة حالة، يمكنكم الإطلاع على مثل عبر
+                        الضغط هنا. -بحث متعمق في الصحافة، يمكنكم الإطلاع على مثل
+                        عبر الضغط هنا وهنا. -حدث إعلامي أو مشروع صحفي. إذا وجد
+                        فريق شبكة الصحفيين الدوليين أنّ فكرتك جديرة بالتطوير،
+                        سيتمّ الرد عليك! وإذا كنت مترددًا وتريد معرفة كيفية عرض
+                        أفكار لإعداد تقارير لشبكتنا، إضغط هنا. قدّم فكرتك عبر
+                        الضغط هنا
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                  <div class="info--block">
+                    <div class="icon text--color-1">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                    <div class="title">
+                      <h3 class="h5">رؤيتنا</h3>
+                    </div>
+                    <div class="content">
+                      <p>
+                        وصول الاخبار والمقالات الى مستوى عالمي نقدم مجموعة واسعة
+                        من المزايا التي تجعل من عملك معنا هو الأفضل على الإطلاق
+                        • الحصول على مردود مالي من اعدادك لتقرير صحفي او خبر
+                        صحفي مميز • شهرة التي يحصل عليها الصحفي بنطاق واسع في
+                        بلدة وخارج للعالمبية
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                  <div class="info--block">
+                    <div class="icon text--color-1">
+                      <i class="fa fa-diamond"></i>
+                    </div>
+                    <div class="title">
+                      <h3 class="h5">مهمتنا</h3>
+                    </div>
+                    <div class="content">
+                      <p>كتابة اخبار ومقالات يعنى بها الجمهور</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                  <div class="info--block">
+                    <div class="icon text--color-1">
+                      <i class="fa fa-object-group"></i>
+                    </div>
+                    <div class="title">
+                      <h3 class="h5">قيمنا</h3>
+                    </div>
+                    <div class="content">
+                      <p>
+                        الشفافية . المصداقية . اخبار على مدار الساعة .ومقالات
+                        مميزة ومتنوعة القيم • النزاهة والاحترام يوجهان سلوكنا في
+                        داخل الشبكة وخارجها. • نقف مع الناس ونروي قصص حقيقية. •
+                        نشجع روح الريادة. • نحافظ على المصداقية من خلال الحيادية
+                        والدقة في تقصي ونقل الحدث. • نسعى جاهدين للتميُّز في كل
+                        ما نقوم به. • توصيل احداث بلدك للعالم بكل مصداقية
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer--section">
+        <div class="footer--widgets pd--30-0 bg--color-2">
+          <div class="container">
+            <div class="row AdjustRow">
+              <div class="col-md-6 col-xs-6 col-xxs-12 ptop--30 pbottom--30">
+                <div class="widget" style="direction: rtl">
+                  <div class="widget--title">
+                    <h2 class="h4">معلومات عنا</h2>
+                    <i class="icon fa fa-exclamation"></i>
+                  </div>
+                  <div class="about--widget">
+                    <div class="content">
+                      <p>
+                        افضل الأخبار والمقالات. تعرف على احدث الأخبار بمصداقية
+                        عالية. يمكنك الاطّلاع على آخر الأخبار المتعلّقة
+                        بالمجالات الرائجة والمزيد من هنا مباشرةً.
+                      </p>
+                    </div>
+                    <div class="action">
+                      <a href="about" class="btn-link">
+                        اقرأ أكثر <i class="fa flm fa-angle-double-right"></i>
+                      </a>
+                    </div>
+                    <ul class="nav">
+                      <li>
+                        <i class="fa fa-map"></i>
+                        <span> فلسطين </span>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope-o"></i>
+                        <a
+                          href="/cdn-cgi/l/email-protection#eb82858d84ab868a998e858a9b84989fc5888486"
+                        >
+                          <span
+                            class="__cf_email__"
+                            data-cfemail="93fafdf5fcd3fef2e1f6fdf2e3fce0e7bdf0fcfe"
+                            >[email&#160;protected]</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:<soon">soon</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-xs-6 col-xxs-12 ptop--30 pbottom--30"
+                style="direction: rtl"
+              >
+                <div class="widget">
+                  <div class="widget--title">
+                    <h2 class="h4">روابط معلومات مفيدة</h2>
+                    <i class="icon fa fa-expand"></i>
+                  </div>
+                  <div class="links--widget">
+                    <ul class="nav">
+                      <li>
+                        <a href="about" class="fa-angle-right"> من نحن </a>
+                      </li>
+                      <li>
+                        <a href="news" class="fa-angle-right">اخبار </a>
+                      </li>
+                      <li>
+                        <a href="#" class="fa-angle-right"> العالم </a>
+                      </li>
+                      <li>
+                        <a href="#" class="fa-angle-right">رياضة</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer--copyright bg--color-3">
+          <div class="social--bg bg--color-1"></div>
+          <div class="container">
+            <p class="text float--left" style="color: #fff">
+              &copy; 2022 <a href="#" style="color: white">مارينا بوست</a>. All
+              Rights Reserved.
+            </p>
+
+            <ul class="nav links float--right" style="color: #fff">
+              <li>
+                <a href="termofservice">السياسة و الخصوصية </a>
+              </li>
+              <li>
+                <a href="home">الرئيسية</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="stickySocial" class="sticky--right">
+      <ul class="nav">
+        <li>
+          <a href="https://www.facebook.com/marena.post.news?locale=ar_AR">
+            <i class="fa fa-facebook"></i>
+            <span> Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/mrynbwst/?hl=ar">
+            <i class="fa fa-instagram"></i>
+            <span> Instagram</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/@marenapost">
+            <i class="fa fa-youtube-play"></i>
+            <span>Youtube Play</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="backToTop">
+      <a href="#">
+        <i class="fa fa-angle-double-up"></i>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.news-ticker {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-items {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 30s linear infinite;
+}
+
+.news-item {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 18px;
+    color: #333;
+}
+/* body
+{
+    direction: rtl;
+} */
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+        0% {
+           transform: translateX(100%);
+        }
+}
+.unlist li
+{
+    padding-top:3rem;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@layer utilities {
+    .bg-primary {
+      @apply bg-[#670006];
+    }
+ 
+
+    @media (min-width: 1200px) {
+        .mrg020p {
+            margin-left: 26% !important;
+            margin-right: 26% !important;
+        }
+    }
+  }
+
+
+
+
+
+   

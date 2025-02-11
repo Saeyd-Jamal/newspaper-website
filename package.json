@@ -1,0 +1,22 @@
+{
+  "name": "newspaper-website",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "@tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.5"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.5",
+    "tw-elements": "^2.0.0"
+  }
+}

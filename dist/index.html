@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marena Post</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-bodyFont">
+    <!-- Header Section -->
+    <header
+      class="bg-white py-9 px-20 shadow-md flex justify-between items-center"
+    >
+      <!-- Ad Banner -->
+
+      <img
+        src="../assets/longad.png"
+        alt="Marena Post Logo"
+        class="h-20 w-[70%] px-20"
+      />
+      <!-- Replace with actual logo -->
+
+      <!-- Logo -->
+
+      <img src="../assets/logo.png" alt="Marena Post Logo" class="h-20" />
+      <!-- Replace with actual logo -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <div
+      class="bg-[#670006] shadow-lg border-t-2 border-[#670006] text-white font-[Cairo] text-sm leading-6 font-normal relative max-h-[65px]"
+    >
+      <div class="container px-4 ml-[100px]">
+        <div class="flex justify-between items-center py-2">
+          <nav
+            id="headerNav"
+            class="min-h-[36px] hidden md:flex space-x-6 rtl:space-x-reverse mrg020p"
+          >
+            <ul class="text-sm flex space-x-6 rtl:space-x-reverse mr-[50px]">
+              <li class="">
+                <a
+                  href="index.html"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="articles.html"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >مقالات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="news"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >اخبار</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact."
+                  class="text-[15px] leading-[27px] hover:border-b-2 border-white py-[15px]"
+                  >تواصل معنا</a
+                >
+              </li>
+              <li class="relative group">
+                <a href="#" class="flex items-center">
+                  <i class="fa fa-angle-left ml-2"></i>المزيد</a
+                >
+                <ul
+                  class="absolute hidden group-hover:block bg-white text-black shadow-md w-[200px] p-4 right-0 text-right"
+                >
+                  <li class="mb-2">
+                    <a href="news?c=33" class="block hover:text-red-500"
+                      >اخبار المشاهير والفنانين</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=31" class="block hover:text-red-500"
+                      >ستايل وموضة</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=30" class="block hover:text-red-500"
+                      >تفسير الاحلام</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=27" class="block hover:text-red-500"
+                      >الأبراج</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=26" class="block hover:text-red-500"
+                      >علوم وحقائق</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="news?c=23" class="block hover:text-red-500"
+                      >معاني الأسماء</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form
+            action="#"
+            class="header--search-form relative min-w-[32px] m-0 pl-[100px] text-left z-[1] float-right active"
+            data-form="validate"
+            novalidate
+          >
+            <input
+              type="search"
+              name="search"
+              id="stxt"
+              placeholder="بحث..."
+              class="header--search-control absolute top-[11px] right-0 w-0 bg-gray-200 border-0 rounded-full opacity-0 invisible transition-all duration-500 ease-in-out text-[#000]"
+              required
+              onkeyup="myFn2('stxt')"
+              aria-required="true"
+            />
+            <button
+              type="submit"
+              class="header--search-btn relative p-[15px] bg-transparent text-[16px] leading-[26px] transition-all duration-300 ease-in-out outline-none"
+            >
+              <i class="header--search-icon fa fa-search"></i>
+            </button>
+          </form>
+
+          <style>
+            .header--search-form.active .header--search-control {
+              width: 220px;
+              opacity: 1;
+              visibility: visible;
+              height: 33px;
+              text-align: left;
+            }
+
+            .header--search-form.active .header--search-btn {
+              padding-right: 15px;
+              color: #999;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content--section mt-10">
+      <div class="row" style="margin: 0px 4%">
+        <div
+          class="col-md-12 col-xs-12 col-sm-12 col-lg-1"
+          style="width: 2.333333%"
+        ></div>
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-11">
+          <div
+            class="bg-[#fafafa] relative h-[45px] border border-[#fafafa] mt-[45px]"
+          >
+            <div
+              class="bg-primary text-white px-4 py-2 w-auto float-right ml-4 leading-normal h-full"
+            >
+              تحديثات الأخبار
+            </div>
+
+            <div class="h-full pt-2 overflow-hidden">
+              <ul class="w-full list-none p-0 m-0" style="text-align: right">
+                <li class="mb-10">
+                  <a href="single?id=963" style="text-align: right">
+                    النقيب زياد الزرعيني الذي ارتقى برصاص الإحتلال خلال اقتحام
+                    مخيم جنين.</a
+                  >
+                </li>
+                <li class="mb-10">
+                  <a href="single?id=814" style="text-align: right">
+                    نقابة أصحاب شركات الباصات: ندعو أصحاب شركات الحافلات
+                    والعاملين في قطاع النقل العام إلى الإلتزام بالاضراب الشامل
+                    الذي دعت له القوى الوطنية والاسلامية غداً تضامناً مع أبناء
+                    شعبنا وكرامة لشهدائنا.</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-1"></div>
+      </div>
+    </div>
+
+    <div class="main-content--section my-5">
+      <div class="flex gap-4 mx-[4%]">
+        <div class="hidden lg:block w-1/4 py-4">
+          <!--slider side-->
+          <div class="transform-none">
+            <div
+              class="w-fit relative overflow-visible box-border min-h-[1px] transform-none"
+            >
+              <!--مساحة اعلانيه جانبية-->
+              <!--sidebar-->
+              <div
+                class="relative overflow-visible box-border min-h-[1px] pb-7"
+              >
+                <div class="pt-0 pb-[1px] static transform-none">
+                  <div class="w-full float-left">
+                    <div class="bg-gray-100">
+                      <div class="px-5 pt-5 pb-4 text-gray-600" data-ajax="tab">
+                        <ul
+                          class="flex justify-between w-full border border-gray-200"
+                        >
+                          <li
+                            class="bg-primary flex-1 border border-gray-200 text-center transition-colors duration-200 ease-in-out"
+                          >
+                            <a
+                              href="#"
+                              class="text-white block px-4 py-2 no-underline outline-none transition-all"
+                              onclick="if (!window.__cfRLUnblockHandlers) return false; nav_sider('ar','Hot')"
+                              data-ajax-action="load_widget_hot_news"
+                            >
+                              أخبار عاجلة
+                            </a>
+                          </li>
+                          <li
+                            class="flex-1 border border-gray-200 text-center transition-colors duration-200 ease-in-out bg-gray-100"
+                          >
+                            <a
+                              href="#"
+                              class="block px-4 py-2 no-underline outline-none transition-all text-gray-800 hover:text-[#670006]"
+                              onclick="if (!window.__cfRLUnblockHandlers) return false; nav_sider('ar','')"
+                              data-ajax-action="load_widget_trendy_news"
+                            >
+                              أحدث الأخبار
+                            </a>
+                          </li>
+                          <li
+                            class="flex-1 border border-gray-200 text-center transition-colors duration-200 ease-in-out"
+                          >
+                            <a
+                              href="#"
+                              class="block px-4 py-2 no-underline outline-none transition-all text-gray-800 hover:text-[#670006]"
+                              onclick="if (!window.__cfRLUnblockHandlers) return false; nav_sider('ar','Watched')"
+                              data-ajax-action="load_widget_most_watched"
+                            >
+                              الأكثر مشاهدة
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="post--items post--items-3 mx-2"
+                        data-ajax-content="outer"
+                      >
+                        <ul
+                          class="nav"
+                          data-ajax-content="inner"
+                          id="nav_sider"
+                        >
+                          <li
+                            class="mt-4 py-4 border-t border-gray-200 flex items-start justify-between gap-2"
+                          >
+                            <!-- Image -->
+
+                            <div class="w-5/12 flex justify-end">
+                              <a href="single?id=2608" class="block">
+                                <img
+                                  src="../assets/files/ذهب___اصفر.png"
+                                  alt="الذهب"
+                                  class="h-20 w-auto object-cover rounded"
+                                />
+                              </a>
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-7/12 text-right">
+                              <!-- Date -->
+                              <ul class="text-sm text-gray-500 text-center">
+                                <li><a href="#">2025-02-06</a></li>
+                              </ul>
+                              <!-- Title -->
+                              <h5 class="text-md font-medium pr-2 leading-snug">
+                                <a href="single?id=2608" class="btn-link">
+                                  الذهب يقترب من أعلى مستوياته التاريخية مع
+                                  استمرار مخاوف الحرب
+                                </a>
+                              </h5>
+                            </div>
+                          </li>
+
+                          <li
+                            class="mt-4 py-4 border-t border-gray-200 flex items-start justify-between gap-2"
+                          >
+                            <!-- Image -->
+
+                            <div class="w-5/12 flex justify-end">
+                              <a href="single?id=2608" class="block">
+                                <img
+                                  src="../assets/files/ذهب___اصفر.png"
+                                  alt="الذهب"
+                                  class="h-20 w-auto object-cover rounded"
+                                />
+                              </a>
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-7/12 text-right">
+                              <!-- Date -->
+                              <ul class="text-sm text-gray-500 text-center">
+                                <li><a href="#">2025-02-06</a></li>
+                              </ul>
+                              <!-- Title -->
+                              <h5 class="text-md font-medium pr-2 leading-snug">
+                                <a href="single?id=2608" class="btn-link">
+                                  الذهب يقترب من أعلى مستوياته التاريخية مع
+                                  استمرار مخاوف الحرب
+                                </a>
+                              </h5>
+                            </div>
+                          </li>
+
+                          <li
+                            class="mt-4 py-4 border-t border-gray-200 flex items-start justify-between gap-2"
+                          >
+                            <!-- Image -->
+
+                            <div class="w-5/12 flex justify-end">
+                              <a href="single?id=2608" class="block">
+                                <img
+                                  src="../assets/files/ذهب___اصفر.png"
+                                  alt="الذهب"
+                                  class="h-20 w-auto object-cover rounded"
+                                />
+                              </a>
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-7/12 text-right">
+                              <!-- Date -->
+                              <ul class="text-sm text-gray-500 text-center">
+                                <li><a href="#">2025-02-06</a></li>
+                              </ul>
+                              <!-- Title -->
+                              <h5 class="text-md font-medium pr-2 leading-snug">
+                                <a href="single?id=2608" class="btn-link">
+                                  الذهب يقترب من أعلى مستوياته التاريخية مع
+                                  استمرار مخاوف الحرب
+                                </a>
+                              </h5>
+                            </div>
+                          </li>
+                        </ul>
+                        <div
+                          class="preloader bg--color-0--b"
+                          data-preloader="1"
+                        >
+                          <div class="preloader--inner"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="resize-sensor"
+                    style="
+                      position: absolute;
+                      inset: 0px;
+                      overflow: hidden;
+                      z-index: -1;
+                      visibility: hidden;
+                    "
+                  >
+                    <div
+                      class="resize-sensor-expand"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        overflow: hidden;
+                        z-index: -1;
+                        visibility: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          transition: all;
+                          width: 289px;
+                          height: 677px;
+                        "
+                      ></div>
+                    </div>
+                    <div
+                      class="resize-sensor-shrink"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        overflow: hidden;
+                        z-index: -1;
+                        visibility: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0;
+                          top: 0;
+                          transition: 0s;
+                          width: 200%;
+                          height: 200%;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-xs-12 col-sm-12 col-lg-1"></div>
+        </div>
+
+        <div class="w-full lg:w-7/12 p-4">
+          <div class="main--content">
+            <div class="mt-[-15px]">
+              <div class="mx-[-7.5px]">
+                <!--slider-->
+                <div class="w-full md:w-full">
+                  <div class="mt-[15px] relative z-0">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="relative"
+                      data-twe-carousel-init
+                      data-twe-ride="carousel"
+                    >
+                      <!--Carousel indicators-->
+                      <div
+                        class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                        data-twe-carousel-indicators
+                      >
+                        <button
+                          type="button"
+                          data-twe-target="#carouselExampleIndicators"
+                          data-twe-slide-to="0"
+                          data-twe-carousel-active
+                          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-twe-target="#carouselExampleIndicators"
+                          data-twe-slide-to="1"
+                          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-twe-target="#carouselExampleIndicators"
+                          data-twe-slide-to="2"
+                          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+
+                      <!--Carousel items-->
+                      <div
+                        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+                      >
+                        <!--First item-->
+                        <div
+                          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                          data-twe-carousel-active
+                        >
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                            class="block w-full"
+                            alt="Wild Landscape"
+                          />
+                        </div>
+                        <!--Second item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                            class="block w-full"
+                            alt="Camera"
+                          />
+                        </div>
+                        <!--Third item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                            class="block w-full"
+                            alt="Exotic Fruits"
+                          />
+                        </div>
+                      </div>
+
+                      <!--Carousel controls - prev item-->
+                      <button
+                        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carouselExampleIndicators"
+                        data-twe-slide="prev"
+                      >
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 19.5L8.25 12l7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Previous</span
+                        >
+                      </button>
+                      <!--Carousel controls - next item-->
+                      <button
+                        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carouselExampleIndicators"
+                        data-twe-slide="next"
+                      >
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Next</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main-->
+          <div class="row" style="transform: none">
+            <div
+              class="main--content col-md-12 col-sm-12"
+              data-sticky-content="true"
+              style="
+                float: right;
+                position: relative;
+                overflow: visible;
+                box-sizing: border-box;
+                min-height: 1px;
+              "
+            >
+              <div
+                class="sticky-content-inner"
+                style="
+                  padding-top: 0px;
+                  padding-bottom: 1px;
+                  position: static;
+                  transform: none;
+                "
+              >
+                <div class="row">
+                  <!--pbottom--30-->
+                  <div class="col-md-12 pt-10">
+                    <div
+                      class="pt-[13px] pr-[57px] pb-[12px] border-t-2 border-[#670006] relative z-0"
+                    >
+                      <h2 class="text-[#670006] font-semibold">
+                        اخبار المشاهير والفنانين
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div class="max-w-6xl mx-auto p-4">
+                    <!-- Main News Section -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                      <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+                        <div class="overflow-hidden">
+                          <img
+                            src="../assets/files/فهد_البطل.png"
+                            alt="مسلسلات رمضان 2025"
+                            class="w-full h-40 object-cover"
+                          />
+                          <div class="p-3">
+                            <p class="text-sm text-gray-500">2025-01-27</p>
+                            <h3 class="text-sm font-semibold">
+                              <a href="#" class="hover:text-red-600"
+                                >القائمة الكاملة لأبرز مسلسلات رمضان 2025</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+
+                        <div class="overflow-hidden">
+                          <img
+                            src="../assets/files/582223663452471.jpg"
+                            alt="ريان رينولدز"
+                            class="w-full h-40 object-cover"
+                          />
+                          <div class="p-3">
+                            <p class="text-sm text-gray-500">2025-01-11</p>
+                            <h3 class="text-sm font-semibold">
+                              <a href="#" class="hover:text-red-600"
+                                >قائمة بأشهر أفلام ريان رينولدز لا تفوت
+                                مشاهدتها</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="relative overflow-hidden rounded-lg shadow-md"
+                      >
+                        <!-- Image -->
+                        <img
+                          src="../assets/files/هدير-عاطف.png"
+                          alt="البلوغر هدير عاطف"
+                          class="w-full h-[17rem] object-cover"
+                        />
+
+                        <!-- Flash Icon -->
+                        <div
+                          class="absolute top-2 right-2 bg-red-600 text-white p-3"
+                        >
+                          <i class="fa fa-bolt"></i>
+                          <!-- Ensure FontAwesome is included -->
+                        </div>
+
+                        <!-- Overlay Text -->
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white"
+                        >
+                          <p class="text-sm opacity-80">2025-01-28</p>
+                          <h2 class="text-lg font-semibold leading-tight">
+                            <a href="#" class="hover:text-red-400"
+                              >البلوغر هدير عاطف من "تيك توك" إلى السجن 5
+                              سنوات.. والسبب!</a
+                            >
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Secondary News Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/files/582223663452471.jpg"
+                          alt="موسم الرياض"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-3">
+                          <p class="text-sm text-gray-500">2025-01-04</p>
+                          <h3 class="text-sm font-semibold">
+                            <a href="#" class="hover:text-red-600"
+                              >موسم الرياض يطلق فعالية "ويكند التسعينات"</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/files/582223663452471.jpg"
+                          alt="مسرحية كريم عبد العزيز"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-3">
+                          <p class="text-sm text-gray-500">2024-12-26</p>
+                          <h3 class="text-sm font-semibold">
+                            <a href="#" class="hover:text-red-600"
+                              >مسرحية جديدة لكريم عبد العزيز بعنوان "الباشا"</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/files/582223663452471.jpg"
+                          alt="دراما رمضان"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-3">
+                          <p class="text-sm text-gray-500">2024-12-02</p>
+                          <h3 class="text-sm font-semibold">
+                            <a href="#" class="hover:text-red-600"
+                              >النجمات يتصدرن دراما رمضان وفي المقدمة ياسمين عبد
+                              العزيز</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/files/582223663452471.jpg"
+                          alt="شيرين عبد الوهاب"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-3">
+                          <p class="text-sm text-gray-500">2024-12-02</p>
+                          <h3 class="text-sm font-semibold">
+                            <a href="#" class="hover:text-red-600"
+                              >رسالة شيرين عبد الوهاب لجمهورها بعد زلة لسانها</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-center items-center gap-20 my-4">
+                  <!-- المزيد من الأخبار -->
+                  <a
+                    href="news"
+                    class="flex items-center bg-[#670005] text-white py-2 px-6 rounded-full border border-[#670005] hover:bg-red-900 transition"
+                  >
+                    <div
+                      class="w-10 h-7 flex justify-center items-center border border-white rounded-full ml-2"
+                    >
+                      <i class="fa fa-chevron-right"></i>
+                    </div>
+                    <span class="text-sm">المزيد من الأخبار</span>
+                  </a>
+
+                  <!-- المزيد من المقالات -->
+                  <a
+                    href="Articles"
+                    class="flex items-center bg-[#670005] text-white py-2 px-6 rounded-full border border-[#670005] hover:bg-red-900 transition"
+                  >
+                    <span class="text-sm">المزيد من المقالات</span>
+                    <div
+                      class="w-10 h-7 flex justify-center items-center border border-white rounded-full mr-2"
+                    >
+                      <i class="fa fa-chevron-left"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block w-1/6 py-4">
+          <!--main-->
+          <div class="transform-none">
+            <div
+              class="float-right relative overflow-visible box-border min-h-[1px] transform-none"
+            >
+              <!--sidebar-->
+              <div
+                class="float-left relative overflow-visible box-border min-h-[1px]"
+              >
+                <div class="pt-0 pb-[1px] static transform-none w-[200px]">
+                  <!--اعلانات-->
+                  <div class="widget">
+                    <div
+                      class="relative p-[12px_24px_13px_0] border-t-2 border-[#670006] z-0"
+                    >
+                      <h2
+                        class="relative m-0 text-[#670006] text-[16px] leading-[26px] font-semibold uppercase z-0"
+                      >
+                        إعلان
+                      </h2>
+                      <i
+                        class="absolute top-1/2 right-0 mt-[-13px] text-[#999] text-[16px] leading-[26px] fa fa-bullhorn"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="widget mt-[60px]">
+                    <div
+                      class="relative p-[12px_24px_13px_0] border-t-2 border-[#670006] z-0"
+                    >
+                      <h2
+                        class="relative m-0 text-[#670006] text-[16px] leading-[26px] font-semibold uppercase z-0"
+                      >
+                        إعلان
+                      </h2>
+                      <i
+                        class="absolute top-1/2 right-0 mt-[-13px] text-[#999] text-[16px] leading-[26px] fa fa-bullhorn"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="widget mt-[60px]">
+                    <div
+                      class="relative p-[12px_24px_13px_0] border-t-2 border-[#670006] z-0"
+                    >
+                      <h2
+                        class="relative m-0 text-[#670006] text-[16px] leading-[26px] font-semibold uppercase z-0"
+                      >
+                        إعلان
+                      </h2>
+                      <i
+                        class="absolute top-1/2 right-0 mt-[-13px] text-[#999] text-[16px] leading-[26px] fa fa-bullhorn"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="widget mt-[60px]">
+                    <div
+                      class="relative p-[12px_24px_13px_0] border-t-2 border-[#670006] z-0"
+                    >
+                      <h2
+                        class="relative m-0 text-[#670006] text-[16px] leading-[26px] font-semibold uppercase z-0"
+                      >
+                        إعلان
+                      </h2>
+                      <i
+                        class="absolute top-1/2 right-0 mt-[-13px] text-[#999] text-[16px] leading-[26px] fa fa-bullhorn"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#1d1d1d] text-[#777]">
+      <!-- Top Section -->
+      <div class="container mx-auto px-6 py-[4rem]">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Useful Links -->
+          <div class="text-right">
+            <div class="relative pt-3 pb-[13px] border-t-2 border-white z-0">
+              <h2
+                class="text-lg font-semibold flex items-center gap-2 justify-start"
+              >
+                <i class="fa fa-expand text-white"></i> روابط معلومات مفيدة
+              </h2>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li class="flex items-center gap-2 justify-start">
+                <a href="about" class="hover:underline">من نحن</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="news" class="hover:underline">أخبار</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="#" class="hover:underline">العالم</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <a href="#" class="hover:underline">رياضة</a
+                ><i class="fa fa-angle-right text-white"></i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- About Section -->
+          <div class="text-right">
+            <div class="relative pt-3 pb-[13px] border-t-2 border-white z-0">
+              <h2
+                class="text-lg font-semibold flex items-center gap-2 justify-start"
+              >
+                <i class="fa fa-exclamation text-white"></i> معلومات عنا
+              </h2>
+            </div>
+            <p class="mt-2 text-sm">
+              افضل الأخبار والمقالات. تعرف على احدث الأخبار بمصداقية عالية.
+              يمكنك الاطّلاع على آخر الأخبار المتعلّقة بالمجالات الرائجة والمزيد
+              من هنا مباشرةً.
+            </p>
+            <a
+              href="about"
+              class="text-white hover:underline flex items-center gap-1 justify-start mt-2"
+            >
+              اقرأ أكثر <i class="fa fa-angle-double-right"></i>
+            </a>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-map text-white"></i> <span>فلسطين</span>
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-envelope text-white"></i>
+                <a href="mailto:info@marenapost.com" class="hover:underline"
+                  >info@marenapost.com</a
+                >
+              </li>
+              <li class="flex items-center gap-2 justify-start">
+                <i class="fa fa-phone text-white"></i>
+                <a href="tel:soon" class="hover:underline">soon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="bg-[#670005] py-6">
+        <div
+          class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm"
+        >
+          <div class="flex gap-4">
+            <a href="home" class="text-white font-semibold">الرئيسية</a>
+
+            <a href="termofservice" class="text-white font-semibold"
+              >السياسة و الخصوصية</a
+            >
+          </div>
+          <p class="text-white font-semibold">
+            . All Rights Reserved.
+            <a href="#" class="text-white font-semibold">مارينا بوست</a>© 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="../node_modules/tw-elements/js/tw-elements.umd.min.js"
+    ></script>
+  </body>
+</html>
