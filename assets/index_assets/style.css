@@ -1,13 +1,6 @@
-@tailwind base;
-@tailwind components;
-
-/* @tailwind utilities; */
-
-@layer base {
-    @font-face {
-        font-family: "Cairo";
-        src: url("fonts/Tajawal-Regular.ttf");
-    }
+@font-face {
+    font-family: "Cairo";
+    src: url("fonts/Tajawal-Regular.ttf");
 }
 
 article,
@@ -85,7 +78,6 @@ body {
         text-align: right;
     }
 }
-
 
 /*Small devices (landscape phones, 576px and up)*/
 
@@ -3193,7 +3185,7 @@ body.boxed>.wrapper {
     bottom: 0;
     background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     opacity: .35;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
     -webkit-transition: opacity .25s ease-in-out;
@@ -3764,7 +3756,7 @@ ul.header--menu-links.nav>li>a:hover {
     background: #fff;
     background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     opacity: .35;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
     z-index: 1
@@ -4413,7 +4405,7 @@ ul.header--menu-links.nav>li>a:hover {
     background: #fff;
     background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     opacity: .35;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
     -webkit-transition: opacity .25s ease-in-out;
@@ -5087,7 +5079,7 @@ ul.header--menu-links.nav>li>a:hover {
     left: 0;
     background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-transition: opacity .25s ease-in-out;
@@ -6315,7 +6307,7 @@ ul.header--menu-links.nav>li>a:hover {
     bottom: 0;
     background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-transition: opacity .25s ease-in-out;
@@ -6953,7 +6945,6 @@ body.isScrolling #backToTop {
     }
 }
 
-
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -6963,7 +6954,6 @@ body.isScrolling #backToTop {
         height: 377px !important;
     }
 }
-
 
 /*Medium devices (tablets, 768px and up)*/
 
@@ -6975,7 +6965,6 @@ body.isScrolling #backToTop {
     }
 }
 
-
 /* Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -6986,7 +6975,6 @@ body.isScrolling #backToTop {
     }
 }
 
-
 /* Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) and (max-width: 2299.98px) {
@@ -6996,7 +6984,6 @@ body.isScrolling #backToTop {
         height: 430px !important;
     }
 }
-
 
 /* Extra large devices (large desktops, 3200px and up)*/
 
@@ -7022,36 +7009,4 @@ body.isScrolling #backToTop {
     block-size: auto;
     color: #fff;
     text-shadow: #000 1px 0 10px;
-}
-
-ul.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-    width: 900px;
-}
-
-ul.scrollmenu a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-ul.scrollmenu a:hover {
-    background-color: #777;
-}
-
-#fx-pricing-widget-copyright {
-    text-align: center;
-    font-size: 13px;
-    font-family: sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #9db2bd;
-}
-
-#fx-pricing-widget-copyright a {
-    text-decoration: unset;
-    color: #bb3534;
-    font-weight: 600;
 }

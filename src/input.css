@@ -7023,3 +7023,35 @@ body.isScrolling #backToTop {
     color: #fff;
     text-shadow: #000 1px 0 10px;
 }
+
+ul.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    width: 900px;
+}
+
+ul.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+ul.scrollmenu a:hover {
+    background-color: #777;
+}
+
+#fx-pricing-widget-copyright {
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #9db2bd;
+}
+
+#fx-pricing-widget-copyright a {
+    text-decoration: unset;
+    color: #bb3534;
+    font-weight: 600;
+}
