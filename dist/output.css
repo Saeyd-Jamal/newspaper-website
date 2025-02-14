@@ -4625,6 +4625,10 @@ ul.header--menu-links.nav>li>a:hover {
     background-color: #f8f8f8
 }
 
+.post--cats {
+    direction: ltr;
+}
+
 .post--cats .nav,
 .post--tags .nav {
     margin: 18px -5px 11px;
@@ -7054,4 +7058,20 @@ ul.scrollmenu a:hover {
     text-decoration: unset;
     color: #bb3534;
     font-weight: 600;
+}
+
+.news--ticker .ticker_title {
+    float: right;
+}
+
+.pagination {
+    float: right;
+}
+
+.dir_rtl {
+    direction: rtl;
+}
+
+.text_dir {
+    text-align: right;
 }
