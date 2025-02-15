@@ -1,17 +1,15 @@
 module.exports = {
-  content: ["./dist/**/*.{html,js}",
-    "./node_modules/tw-elements/js/**/*.js"
-], 
+    content: ["./dist/**/*.{html,js}"],
 
-  theme: {
-    extend: {
-      colors: {
-      
-      },
-      fontFamily:{
-        bodyFont:["Cairo"]
-      }
+    theme: {
+        extend: {
+            colors: {
+
+            },
+            fontFamily: {
+                bodyFont: ["Cairo"]
+            }
+        },
     },
-  },
-  plugins: [require("tw-elements/plugin.cjs")],
+
 };

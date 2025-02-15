@@ -21,6 +21,7 @@ a:hover {
     text-decoration: none;
 }
 
+
 /*-----------------------------
 	News Ticker
 ------------------------------*/
@@ -173,5 +174,69 @@ a:hover {
     -ms-transform: translate(-50%, -50%) rotate(405deg);
     transform: translate(-50%, -50%) rotate(405deg);
 }
+
+.news--ticker {
+    width: 100%;
+    background: #fafafa;
+    padding: 5px 0;
+}
+
+.acme-news-ticker {
+    background: #fff;
+    border: 1px solid #ddd;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.acme-news-ticker-label {
+    background: #670005;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.acme-news-ticker-box {
+    overflow: hidden;
+    width: 100%;
+}
+
+.acme-news-ticker-box ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    animation: ticker-scroll 15s linear infinite;
+}
+
+.acme-news-ticker-box ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.acme-news-ticker-box ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.acme-news-ticker-box ul li a:hover {
+    color: #670005;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 
 /*# sourceMappingURL=style.css.map */

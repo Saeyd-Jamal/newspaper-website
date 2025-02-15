@@ -6,8 +6,13 @@
 @layer base {
     @font-face {
         font-family: "Cairo";
-        src: url("fonts/Tajawal-Regular.ttf");
+        src: url("..");
     }
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("../assets/index_assets/fonts/Tajawal-Regular.ttf");
 }
 
 article,
@@ -7074,4 +7079,42 @@ ul.scrollmenu a:hover {
 
 .text_dir {
     text-align: right;
+}
+
+.close-menu {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #670006;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    font-family: "FontAwesome";
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+.close-menu i {
+    font-size: 16px;
+}
+
+@media (min-width:990px) {
+    .header--search-form {
+        margin-right: 200px;
+    }
+}
+
+@media (max-width:990px) {
+    .close-menu {
+        display: inline;
+    }
+}
+
+.news--ticker {
+    direction: rtl;
 }

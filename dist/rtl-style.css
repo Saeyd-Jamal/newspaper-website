@@ -43,3 +43,11 @@ body {
 .post--content {
     direction: ltr;
 }
+
+.news--ticker {
+    direction: ltr;
+}
+
+.acme-news-ticker-label {
+    margin-left: 0;
+}
