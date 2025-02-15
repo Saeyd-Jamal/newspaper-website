@@ -55,3 +55,32 @@ $(document).click(function(event) {
         $(".navbar-collapse").removeClass("in");
     }
 });
+
+$(document).ready(function() {
+    $("#toLang").click(function() {
+        let currentText = $(this).text();
+        if(currentText == "Arabic"){
+            $(this).text("English");
+            $("#changeDirection").prop("disabled", false);
+            $('html').attr('dir', 'rtl');
+        }else{
+            $(this).text("Arabic");
+            $("#changeDirection").prop("disabled", true);
+            $('html').attr('dir', 'ltr');
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    // Switch active tab on click
+    $('.list--widget-nav .nav a').click(function (e) {
+        e.preventDefault();
+        $('.nav li').removeClass('active');
+        $(this).parent('li').addClass('active');
+
+        var target = $(this).attr('data-bs-target');
+        $('.tab-pane').removeClass('fade show active');
+        $(target).addClass('show active');
+    });
+});
