@@ -84,7 +84,7 @@ body {
         object-fit: cover;
     }
     .home-sml-div {
-        margin-bottom: 10px;
+        margin-bottom: -40px;
         height: 223px;
         direction: rtl;
         text-align: right;
@@ -100,7 +100,7 @@ body {
         object-fit: cover;
     }
     .home-sml-div {
-        margin-bottom: 10px;
+        margin-bottom: -8px;
         height: 213px;
         direction: rtl;
         text-align: right;
@@ -113,7 +113,7 @@ body {
         object-fit: cover;
     }
     .home-sml-div {
-        margin-bottom: 10px;
+        margin-bottom: -40px;
         height: 259px;
         direction: rtl;
         text-align: right;
@@ -126,7 +126,7 @@ body {
         object-fit: fill;
     }
     .home-sml-div {
-        margin-bottom: 10px;
+        margin-bottom: -40px;
         height: 259px;
         direction: rtl;
         text-align: right;
@@ -457,6 +457,11 @@ body.boxed>.wrapper {
 
 .pd--30-0 {
     padding: 30px 0
+}
+
+.pdt--30-0 {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .pd--100-0 {
@@ -2892,7 +2897,7 @@ body.boxed>.wrapper {
 }
 
 .about--widget>.nav>li+li {
-    margin-top: 10px
+    margin-top: 3px
 }
 
 .about--widget>.nav>li>.fa {
@@ -2906,10 +2911,16 @@ body.boxed>.wrapper {
     color: #fff
 }
 
-.about--widget>.nav>li>a,
-.about--widget>.nav>li>span {
+.about--widget>.nav>li>a {
     display: inline-block;
     padding: 0;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.about--widget>.nav>li>span {
+    display: inline-block;
+    padding-right: 10px;
     font-size: 14px;
     line-height: 24px
 }
@@ -3398,7 +3409,7 @@ div#flickr_badge_wrapper {
 }
 
 .header--mainbar {
-    padding: 30px 0
+    padding: 10px 0
 }
 
 .header--style-7 .header--mainbar,
@@ -4127,7 +4138,7 @@ ul.header--menu-links.nav>li>a:hover {
 }
 
 .news--ticker {
-    margin-top: 30px
+    margin-top: 10px
 }
 
 .news--ticker .title {
@@ -4322,7 +4333,7 @@ ul.header--menu-links.nav>li>a:hover {
 }
 
 .post--items.post--items-1 {
-    margin-top: -15px
+    margin-top: 15px
 }
 
 .main--breadcrumb+.post--items.post--items-1 {
@@ -7117,4 +7128,12 @@ ul.scrollmenu a:hover {
 
 .news--ticker {
     direction: rtl;
+}
+
+.post--info {
+    text-align: end;
+}
+
+.sticky-content-inner {
+    text-align: right;
 }
