@@ -42,7 +42,7 @@
                 data: {
                     "id": result
                 },
-                success: function(data) {
+                success: function (data) {
                     if (data != " ") {
                         document.getElementById('city').innerHTML = data;
                     } else {
@@ -50,7 +50,7 @@
                     }
 
                 },
-                error: function() {
+                error: function () {
                     document.getElementById('city').innerHTML = "";
                 }
             });
@@ -130,17 +130,28 @@
                             تسجيل </h1>
                         <p>قم بالتسجيل للوصول إلى حسابك عن طريق ملء النموذج أدناه </p>
                     </div>
-                    <form method="post" action="../u_controller/publisher" enctype="multipart/form-data" style="    direction: rtl;text-align: right;">
+                    <form method="post" action="../u_controller/publisher" enctype="multipart/form-data"
+                        style="    direction: rtl;text-align: right;">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p> هاتف </label>
-                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="" required onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('phone')" data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p> هاتف
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder=""
+                                        required
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('phone')"
+                                        data-cf-modified-="">
                                 </div>
 
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>البريد الإلكتروني</label>
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="" required onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('email')" data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>البريد الإلكتروني
+                                    </label>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder=""
+                                        required
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('email')"
+                                        data-cf-modified-="">
                                 </div>
 
 
@@ -148,14 +159,24 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>اسم المستخدم</label>
-                                    <input type="text" class="form-control" name="id" style="display:none;" value="0" placeholder="" style="display: none;">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="" value="" onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('name')" data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>اسم المستخدم
+                                    </label>
+                                    <input type="text" class="form-control" name="id" style="display:none;" value="0"
+                                        placeholder="" style="display: none;">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder=""
+                                        value=""
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('name')"
+                                        data-cf-modified-="">
                                 </div>
 
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>تاريخ الميلاد                                    </label>
-                                    <input type="date" class="form-control" name="barth_date" id="barth_date" onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('barth_date')" placeholder="تاريخ الاضافة" data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>تاريخ الميلاد
+                                    </label>
+                                    <input type="date" class="form-control" name="barth_date" id="barth_date"
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('barth_date')"
+                                        placeholder="تاريخ الاضافة" data-cf-modified-="">
                                 </div>
                             </div>
                         </div>
@@ -165,24 +186,40 @@
                             <div class="col-md-6">
                                 <div class="form-group">
 
-                                    <label><p style="color: red;     float: left;">*</p>كلمة المرور</label>
-                                    <input type="password" class="form-control" name="password" id="psw" placeholder="" onkeyup="if (!window.__cfRLUnblockHandlers) return false; cpass('');myFn2('psw')" required data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>كلمة المرور
+                                    </label>
+                                    <input type="password" class="form-control" name="password" id="psw" placeholder=""
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false; cpass('');myFn2('psw')"
+                                        required data-cf-modified-="">
                                 </div>
 
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>العنوان</label>
-                                    <textarea rows="5" cols="5" class="form-control" name="address" id="address" required onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('address')" placeholder="" data-cf-modified-=""></textarea>
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>العنوان
+                                    </label>
+                                    <textarea rows="5" cols="5" class="form-control" name="address" id="address"
+                                        required
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('address')"
+                                        placeholder="" data-cf-modified-=""></textarea>
                                 </div>
 
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>تأكيد كلمة المرور</label>
-                                    <input type="password" class="form-control" name="re_password" id="cpsw" placeholder="" onkeyup="if (!window.__cfRLUnblockHandlers) return false; cpass();myFn2('cpsw')" required data-cf-modified-="">
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>تأكيد كلمة المرور
+                                    </label>
+                                    <input type="password" class="form-control" name="re_password" id="cpsw"
+                                        placeholder=""
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false; cpass();myFn2('cpsw')"
+                                        required data-cf-modified-="">
                                 </div>
                                 <div class="form-group">
                                     <label>عن الناشر</label>
-                                    <textarea rows="5" cols="5" class="form-control" name="about" id="about" required onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('about')" placeholder="" data-cf-modified-=""></textarea>
+                                    <textarea rows="5" cols="5" class="form-control" name="about" id="about" required
+                                        onkeyup="if (!window.__cfRLUnblockHandlers) return false;  myFn2('about')"
+                                        placeholder="" data-cf-modified-=""></textarea>
                                 </div>
 
                             </div>
@@ -196,7 +233,9 @@
 
 
                                 <div class="form-group">
-                                    <label><p style="color: red;     float: left;">*</p>مرفقات                                    </label>
+                                    <label>
+                                        <p style="color: red;     float: left;">*</p>مرفقات
+                                    </label>
 
                                     <input type="file" class="form-control" name="attachments" placeholder="" accept="image/*,application/pdf,application/msword,
   application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
@@ -205,9 +244,10 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>صورة شخصية                                    </label>
+                                    <label>صورة شخصية </label>
 
-                                    <input type="file" class="form-control" name="pic" placeholder="" accept="image/*" required>
+                                    <input type="file" class="form-control" name="pic" placeholder="" accept="image/*"
+                                        required>
 
                                 </div>
 
@@ -236,11 +276,16 @@
     <script src="../assets/index_assets/js/jquery.barrating.min.js" type="text/javascript"></script>
     <script src="../assets/index_assets/js/jquery.countdown.min.js" type="text/javascript"></script>
     <script src="../assets/index_assets/js/retina.min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"
+        type="text/javascript"></script>
 
     <script src="../assets/index_assets/js/main.js" type="text/javascript"></script>
-    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49" defer></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"912073a1cd6ab373","version":"2025.1.0","r":1,"token":"602890b0b80540f5a9da77dde812b1ae","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49"
+        defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"912073a1cd6ab373","version":"2025.1.0","r":1,"token":"602890b0b80540f5a9da77dde812b1ae","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
         crossorigin="anonymous"></script>
 </body>
 

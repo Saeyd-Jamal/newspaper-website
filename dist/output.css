@@ -69,7 +69,7 @@ body {
     background: #fff !important;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 990px) {
     .s1_div {
         display: none;
     }
@@ -1728,7 +1728,7 @@ body.boxed>.wrapper {
 }
 
 .main--sidebar .widget+.widget {
-    margin-top: 60px
+    margin-top: 5px
 }
 
 .widget--title {

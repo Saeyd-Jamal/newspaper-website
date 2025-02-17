@@ -25,7 +25,6 @@
 <script type="text/javascript">
     function myFn2(val) {
 
-
         const tc = document.getElementById(val).value;
         console.log("-->" + removeHTMLTags(tc));
         document.getElementById(val).value = removeHTMLTags(tc);
@@ -83,13 +82,18 @@
                     </div>
                     <form action="../u_controller/Login" method="post" style="    direction: rtl;text-align: right;">
                         <div class="form-group"> <label>
-                                <span style="    text-align: center;">اسم المستخدم                                أو عنوان البريد الإلكتروني   </span> 
-                                <input type="text" name="name" id="name" class="form-control" required onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('name')" data-cf-modified-=""> </label> </div>
+                                <span style="    text-align: center;">اسم المستخدم أو عنوان البريد الإلكتروني </span>
+                                <input type="text" name="name" id="name" class="form-control" required
+                                    onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('name')"
+                                    data-cf-modified-=""> </label> </div>
                         <div class="form-group"> <label>
                                 <span style="    text-align: center;">كلمة المرور</span>
-                                <input type="password" name="password" id="password" class="form-control" required onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('password')" data-cf-modified-=""> </label> </div>
+                                <input type="password" name="password" id="password" class="form-control" required
+                                    onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFn2('password')"
+                                    data-cf-modified-=""> </label> </div>
                         <button type="submit" class="btn btn-lg btn-block btn-primary">تسجيل الدخول</button>
-                        <p class="help-block clearfix"> <a href="#" class="btn-link pull-left">هل نسيت إسم المستخدم أو كلمة السر؟</a> <a href="register.html" class="btn-link pull-right">إنشاء حساب</a> </p>
+                        <p class="help-block clearfix"> <a href="#" class="btn-link pull-left">هل نسيت إسم المستخدم أو
+                                كلمة السر؟</a> <a href="register.html" class="btn-link pull-right">إنشاء حساب</a> </p>
                     </form>
                 </div>
             </div>
@@ -108,11 +112,16 @@
     <script src="../assets/index_assets/js/jquery.barrating.min.js" type="text/javascript"></script>
     <script src="../assets/index_assets/js/jquery.countdown.min.js" type="text/javascript"></script>
     <script src="../assets/index_assets/js/retina.min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"
+        type="text/javascript"></script>
 
     <script src="../assets/index_assets/js/main.js" type="text/javascript"></script>
-    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49" defer></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9120635dabb7b37f","version":"2025.1.0","r":1,"token":"602890b0b80540f5a9da77dde812b1ae","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49"
+        defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"9120635dabb7b37f","version":"2025.1.0","r":1,"token":"602890b0b80540f5a9da77dde812b1ae","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
         crossorigin="anonymous"></script>
 </body>
 
