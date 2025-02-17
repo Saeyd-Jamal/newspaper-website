@@ -1726,7 +1726,9 @@ body.boxed>.wrapper {
 .map--fluid {
     min-height: 300px
 }
-
+.widget{
+    margin: 20px 0;
+}
 .main--sidebar .widget+.widget {
     margin-top: 5px
 }
