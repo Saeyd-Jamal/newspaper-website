@@ -101,7 +101,7 @@ body {
     }
     .home-sml-div {
         margin-bottom: -8px;
-        /* height: 213px; */
+        height: 213px;
         direction: rtl;
         text-align: right;
     }
@@ -114,7 +114,7 @@ body {
     }
     .home-sml-div {
         margin-bottom: -40px;
-        /* height: 259px; */
+        height: 259px;
         direction: rtl;
         text-align: right;
     }
@@ -127,7 +127,7 @@ body {
     }
     .home-sml-div {
         margin-bottom: -40px;
-        /* height: 259px; */
+        height: 259px;
         direction: rtl;
         text-align: right;
     }
@@ -7138,4 +7138,22 @@ ul.scrollmenu a:hover {
 
 .sticky-content-inner {
     text-align: right;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1190px
+    }
 }
