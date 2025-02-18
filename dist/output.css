@@ -80,7 +80,7 @@ body {
 
 @media (max-width: 499.98px) {
     .home-sml-img {
-        height: 100px;
+        /* height: 100px; */
         object-fit: cover;
     }
     .home-sml-div {
@@ -96,12 +96,12 @@ body {
 
 @media (min-width: 500px) and (max-width: 721.98px) {
     .home-sml-img {
-        height: 100px;
+        /* height: 100px; */
         object-fit: cover;
     }
     .home-sml-div {
         margin-bottom: -8px;
-        height: 213px;
+        /* height: 213px; */
         direction: rtl;
         text-align: right;
     }
@@ -109,12 +109,12 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .home-sml-img {
-        height: 100px;
+        /* height: 100px; */
         object-fit: cover;
     }
     .home-sml-div {
         margin-bottom: -40px;
-        height: 259px;
+        /* height: 259px; */
         direction: rtl;
         text-align: right;
     }
@@ -122,12 +122,12 @@ body {
 
 @media (min-width: 720px) and (max-width: 1200px) {
     .home-sml-img {
-        height: 142px;
+        /* height: 142px; */
         object-fit: fill;
     }
     .home-sml-div {
         margin-bottom: -40px;
-        height: 259px;
+        /* height: 259px; */
         direction: rtl;
         text-align: right;
     }
@@ -6971,7 +6971,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 283px !important;
+        /* height: 283px !important; */
     }
 }
 
@@ -6982,7 +6982,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 377px !important;
+        /* height: 377px !important; */
     }
 }
 
@@ -6993,7 +6993,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 377px !important;
+        /* height: 377px !important; */
     }
 }
 
@@ -7004,7 +7004,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 377px !important;
+        /* height: 377px !important; */
     }
 }
 
@@ -7015,7 +7015,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 430px !important;
+        /* height: 430px !important; */
     }
 }
 
@@ -7026,7 +7026,7 @@ body.isScrolling #backToTop {
     .slider_img {
         width: 100%;
         object-fit: cover;
-        height: 795px !important;
+        /* height: 795px !important; */
     }
     a {
         font-size: large;
