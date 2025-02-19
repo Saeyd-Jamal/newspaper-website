@@ -7142,7 +7142,12 @@ ul.scrollmenu a:hover {
 
 @media (min-width:768px) {
     .container {
-        width: 93%
+        width: 96%
+    }
+    .container2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 }
 
@@ -7154,7 +7159,7 @@ ul.scrollmenu a:hover {
 
 @media (min-width:1200px) {
     .container {
-        width: 1190px
+        width: 96%;
     }
 }
 
