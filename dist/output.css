@@ -7160,16 +7160,28 @@ ul.scrollmenu a:hover {
         flex-direction: column-reverse;
     }
     .post--info .meta>li>a{
-        font-size: 21px;
+        font-size: 35px;
+    }
+    .list--widget-nav .nav>li>a {
+        padding: 35px;
+        font-size: 41px;
     }
     .h4{
         font-size: 23px !important;
     }
-    h5{
-        font-size: 22px;
+    .title h5{
+        font-size: 40px;
+        padding-right: 45px !important;
+        font-weight: bold;
     }
     .post--item.post--layout-3 .post--img .thumb {
-        max-width: 185px;
+        max-width: 369px;
+    }
+    .sleder-lab{
+        display: none;
+    }
+    .sleder-mob{
+        display: block;
     }
 }
 
@@ -7178,14 +7190,21 @@ ul.scrollmenu a:hover {
     .section-left{
         width: 20%;
     }
+    .list--widget-nav .nav>li>a {
+        padding: 5px;
+        line-height: 18px;
+        font-size: 14px;
+    }
     .post--info .meta>li>a{
         font-size: 14px;
     }
     .h4{
         font-size: 14px !important;
     }
-    h5{
+    
+    .title h5{
         font-size: 14px;
+        padding-right: 12px !important;
     }
     .section-right{
         width: fit-content;
@@ -7201,6 +7220,15 @@ ul.scrollmenu a:hover {
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: row;
+    }
+    .post--item.post--layout-3 .post--img .thumb {
+        max-width: 185px;
+    }
+    .sleder-lab{
+        display: block;
+    }
+    .sleder-mob{
+        display: none;
     }
 }
 
@@ -7241,7 +7269,6 @@ table.rates-table{
     height: 200px;
 }
 @media (max-width:768px) {
-    
     #iframeId{
         height: 300px;
     }
