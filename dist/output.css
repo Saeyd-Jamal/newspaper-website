@@ -7273,3 +7273,14 @@ table.rates-table{
         height: 300px;
     }
 }
+
+.navbar-toggle {
+    background-color: #ff0000;
+    border: 1px solid #000;
+}
+.navbar-toggle .icon-bar {
+    border-radius: 2px;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
