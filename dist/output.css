@@ -7183,10 +7183,54 @@ ul.scrollmenu a:hover {
     .sleder-mob{
         display: block;
     }
+    .navbar-header{
+        display: block;
+    }
+    .header--topbar .nav{
+        font-size: 32px;
+    }
+    
+    .header--topbar .nav>li {
+        float: none;
+        margin: 1px 10px 15px;
+    }
+    .float--right {
+        float: none;
+        text-align: center;
+    }
+    .float--left {
+        float: none;
+        text-align: center;
+    }
 }
 
 
 @media (min-width:992px) {
+    .float--right {
+        float: right;
+    }
+    .float--left {
+        float: left;
+    }
+    .header--topbar .nav>li {
+        float: left;
+        margin: 0 10px
+    }
+    .header--topbar .nav{
+        font-size: 18px;
+    }
+    
+    .navbar-header{
+        display: none;
+    }
+    .nav_logo_img{
+        width: 100%;
+    }
+    .hrader_logo_ads{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .section-left{
         width: 20%;
     }
