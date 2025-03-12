@@ -86,7 +86,6 @@ body {
     .home-sml-div {
         margin-bottom: 9px;
         height: 223px;
-        direction: rtl;
         text-align: right;
     }
 }
@@ -102,7 +101,6 @@ body {
     .home-sml-div {
         margin-bottom: 9px;
         height: 213px;
-        direction: rtl;
         text-align: right;
     }
 }
@@ -115,7 +113,6 @@ body {
     .home-sml-div {
         margin-bottom: -40px;
         height: 259px;
-        direction: rtl;
         text-align: right;
     }
 }
@@ -128,13 +125,11 @@ body {
     .home-sml-div {
         margin-bottom: 9px;
         height: 259px;
-        direction: rtl;
         text-align: right;
     }
     .post--items-2 ul .home-sml-div {
         margin-bottom: 99px;
         height: 259px;
-        direction: rtl;
         text-align: right;
     }
 }
